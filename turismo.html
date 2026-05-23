@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explora el Mundo</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f8f9ff;
+}
+
+header{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 60px;
+background:rgba(0,0,0,0.2);
+}
+
+.logo{
+font-size:2rem;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ffd166;
+}
+
+.hero{
+height:85vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:5rem;
+margin-bottom:20px;
+text-shadow:4px 4px 15px rgba(0,0,0,0.5);
+}
+
+.hero p{
+max-width:700px;
+font-size:1.3rem;
+line-height:1.8;
+}
+
+footer{
+background:#ff4fa3;
+color:white;
+text-align:center;
+padding:25px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav>
+<div class="logo">✈ Explora el Mundo</div>
+
+<ul>
+<li><a href="#destinos-page">Destinos</a></li>
+<li><a href="#reservas-page">Reservas</a></li>
+<li><a href="#contacto-page">Contacto</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+<h1>Viaja por el Mundo</h1>
+
+<p>
+Descubre experiencias inolvidables y disfruta aventuras únicas con nuestra agencia profesional de turismo.
+</p>
+</div>
+
+</header>
+
+<footer>
+<p>© 2026 Explora el Mundo | Agencia Profesional de Turismo 🌍</p>
+</footer>
+
+<section id="destinos-page" style="padding:80px 40px;background:#fff4f8;">
+<h2 style="text-align:center;font-size:3rem;color:#ff4fa3;margin-bottom:40px;">
+🌍 Destinos Turísticos
+</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;max-width:1200px;margin:auto;">
+
+<div style="background:white;border-radius:25px;overflow:hidden;box-shadow:0 10px 20px rgba(0,0,0,0.1);">
+<img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a" style="width:100%;height:220px;object-fit:cover;">
+<div style="padding:25px;">
+<h3 style="color:#00aaff;font-size:2rem;">París</h3>
+<p>Descubre la Torre Eiffel y los paisajes románticos.</p>
+</div>
+</div>
+
+<div style="background:white;border-radius:25px;overflow:hidden;box-shadow:0 10px 20px rgba(0,0,0,0.1);">
+<img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c" style="width:100%;height:220px;object-fit:cover;">
+<div style="padding:25px;">
+<h3 style="color:#00aaff;font-size:2rem;">Maldivas</h3>
+<p>Playas paradisíacas y aguas cristalinas.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="reservas-page" style="padding:80px 40px;background:#eefbff;">
+<h2 style="text-align:center;font-size:3rem;color:#00aaff;margin-bottom:40px;">
+📋 Reservas
+</h2>
+
+<div style="max-width:700px;margin:auto;background:white;padding:40px;border-radius:25px;box-shadow:0 10px 25px rgba(0,0,0,0.1);">
+<form style="display:flex;flex-direction:column;gap:20px;">
+<input type="text" placeholder="Nombre completo" style="padding:16px;border:none;border-radius:12px;background:#f5f5f5;">
+<input type="email" placeholder="Correo electrónico" style="padding:16px;border:none;border-radius:12px;background:#f5f5f5;">
+<select style="padding:16px;border:none;border-radius:12px;background:#f5f5f5;">
+<option>Selecciona un destino</option>
+<option>París</option>
+<option>Maldivas</option>
+<option>Tokio</option>
+</select>
+<input type="date" style="padding:16px;border:none;border-radius:12px;background:#f5f5f5;">
+<button style="padding:16px;border:none;border-radius:40px;background:linear-gradient(135deg,#00aaff,#00d4ff);color:white;font-weight:bold;">
+Reservar Ahora
+</button>
+</form>
+</div>
+</section>
+
+<section id="contacto-page" style="padding:80px 40px;background:#fff9ec;">
+<h2 style="text-align:center;font-size:3rem;color:#ff9966;margin-bottom:40px;">
+📞 Contacto
+</h2>
+
+<div style="max-width:700px;margin:auto;background:white;padding:40px;border-radius:25px;box-shadow:0 10px 25px rgba(0,0,0,0.1);line-height:2.2;text-align:center;">
+<p>📍 Oficina Principal: Tacna, Perú</p>
+<p>📞 Teléfono: +51 987 654 321</p>
+<p>📧 Correo: reservas@exploraelmundo.com</p>
+<p>🕒 Atención: Lunes a Sábado | 8:00 AM - 7:00 PM</p>
+</div>
+</section>
+
+<!-- ================= DESTINOS.HTML ================= -->
+
+<!-- Página adicional: destinos.html -->
+
+<section style="padding:60px;background:#fff4f8;">
+<h2 style="text-align:center;font-size:3rem;color:#ff4fa3;margin-bottom:40px;">
+🌍 Destinos Turísticos
+</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;">
+
+<div style="background:white;border-radius:25px;overflow:hidden;box-shadow:0 10px 20px rgba(0,0,0,0.1);">
+<img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a" style="width:100%;height:220px;object-fit:cover;">
+<div style="padding:25px;">
+<h3 style="color:#00aaff;">París</h3>
+<p>Descubre la Torre Eiffel y los paisajes románticos.</p>
+</div>
+</div>
+
+<div style="background:white;border-radius:25px;overflow:hidden;box-shadow:0 10px 20px rgba(0,0,0,0.1);">
+<img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c" style="width:100%;height:220px;object-fit:cover;">
+<div style="padding:25px;">
+<h3 style="color:#00aaff;">Maldivas</h3>
+<p>Playas paradisíacas y aguas cristalinas.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- ================= RESERVAS.HTML ================= -->
+
+<section style="padding:70px;background:#eefbff;">
+<h2 style="text-align:center;font-size:3rem;color:#00aaff;margin-bottom:40px;">
+📋 Reservas
+</h2>
+
+<div style="max-width:700px;margin:auto;background:white;padding:40px;border-radius:25px;box-shadow:0 10px 25px rgba(0,0,0,0.1);">
+
+<form style="display:flex;flex-direction:column;gap:20px;">
+<input type="text" placeholder="Nombre completo" style="padding:16px;border:none;border-radius:12px;background:#f5f5f5;">
+
+<input type="email" placeholder="Correo electrónico" style="padding:16px;border:none;border-radius:12px;background:#f5f5f5;">
+
+<select style="padding:16px;border:none;border-radius:12px;background:#f5f5f5;">
+<option>Selecciona un destino</option>
+<option>París</option>
+<option>Maldivas</option>
+<option>Tokio</option>
+</select>
+
+<input type="date" style="padding:16px;border:none;border-radius:12px;background:#f5f5f5;">
+
+<button style="padding:16px;border:none;border-radius:40px;background:linear-gradient(135deg,#00aaff,#00d4ff);color:white;font-weight:bold;">
+Reservar Ahora
+</button>
+</form>
+
+</div>
+</section>
+
+<!-- ================= CONTACTO.HTML ================= -->
+
+<section style="padding:70px;background:#fff9ec;">
+<h2 style="text-align:center;font-size:3rem;color:#ff9966;margin-bottom:40px;">
+📞 Contacto
+</h2>
+
+<div style="max-width:700px;margin:auto;background:white;padding:40px;border-radius:25px;box-shadow:0 10px 25px rgba(0,0,0,0.1);line-height:2.2;text-align:center;">
+<p>📍 Oficina Principal: Tacna, Perú</p>
+<p>📞 Teléfono: +51 987 654 321</p>
+<p>📧 Correo: reservas@exploraelmundo.com</p>
+<p>🕒 Atención: Lunes a Sábado | 8:00 AM - 7:00 PM</p>
+</div>
+</section>
+
+</body>
+</html>
